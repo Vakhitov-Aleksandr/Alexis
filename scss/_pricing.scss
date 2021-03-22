@@ -1,0 +1,84 @@
+.pricing{
+  background: #F7F7F7;
+  .row{
+    margin: -0.9375rem -0.9375rem;
+  }
+  .col{
+    width: 33.333%;
+    padding: 0.9375rem 0.9375rem;
+    &:nth-child(1){
+      
+      .card{
+        border-top: 0.1875rem solid #38C695;
+        &__price{
+          background: #38C695;
+          box-shadow: 0 0 0.3125rem #38C695;
+        }
+      }
+    }
+    &:nth-child(2){
+      .card{
+        border-top: 0.1875rem solid #FC5F45;
+        &__price{
+          background:#FC5F45;
+          box-shadow: 0 0 0.3125rem#FC5F45;
+        }
+      }
+    }
+    &:nth-child(3){
+      .card{
+        border-top: 0.1875rem solid#B27CF5;
+        &__price{
+          background: #B27CF5;
+          box-shadow: 0 0 0.3125rem #B27CF5;
+        }
+      }
+    }
+  }
+  .card{
+    
+    background: #fff;
+    padding: 1.875rem 0 2.3125rem 0;
+    text-align: center;
+    box-shadow: 0px 0px 1.25rem rgba(0, 0, 0, 0.05);
+    &__title{
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #313131;
+      margin-bottom: 1.625rem;
+    }
+    &__items{
+      color: #616161;
+      margin-bottom: 2rem;
+    }
+    &__item{
+      & + *{
+        margin-top: 1.25rem;
+      }
+      .bold{
+        color: #272727;
+        font-weight: 600;
+      }
+    }
+    &__price{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 6.625rem;
+      height: 6.625rem;
+      border-radius: 100%;
+      background: #000;
+      margin-bottom: 2.5rem;
+      
+      border: solid 0.1875rem #fff;
+     
+      color: #fff;
+      font-size: 0.8125rem;
+      .bold{
+        font-size: 1.5625rem;
+      }
+    }
+  }
+
+}

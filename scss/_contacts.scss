@@ -1,0 +1,132 @@
+.contacts {
+  background: #cccccc;
+
+  .form {
+    text-align: center;
+    max-width: 46.875rem;
+    margin: auto;
+    // .form__inputs
+
+    &__inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // .form__input
+
+    &__input {
+      flex-basis: 22.5rem;
+      padding: 0.875rem 0;
+      margin-bottom: 1.5rem;
+      border-radius: 0.25rem;
+      border: solid 0.125rem #efefef;
+      &::placeholder {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #616161;
+      }
+    }
+    &__message {
+      width: 100%;
+      max-width: 100%;
+      height: 12.5rem;
+      min-height: 12.5rem;
+      border-radius: 0.25rem;
+      border: solid 0.125rem #efefef;
+      padding-top: 0.875rem;
+      &::placeholder {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #616161;
+      }
+    }
+    .button {
+      margin-top: 3.125rem;
+    }
+    margin-bottom: 9.375rem;
+  }
+
+  .footer {
+    background: #262732;
+    padding: 4.6875rem 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #000;
+      width: 100%;
+      height: 0.1875rem;
+      background: linear-gradient(to right, #fc5f45 25%, #38c695 0, #38c695 50%, #b27cf5 0, #b27cf5 75%, #feb960 0);
+    }
+    .row {
+      display: flex;
+      .col {
+        width: 25%;
+        flex: 1;
+        padding: 0 2.5rem;
+        display: flex;
+        justify-content: center;
+        &:nth-child(1) {
+          .card {
+            align-self: center;
+          }
+        }
+        &:nth-child(2) {
+          .card {
+            &__title {
+              color: #38c695;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .card {
+            &__title {
+              color: #b27cf5;
+            }
+          }
+        }
+        &:nth-child(4) {
+          .card {
+            &__title {
+              color: #feb960;
+            }
+          }
+        }
+        .card {
+          &__title {
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 0.625rem;
+          }
+          &__text {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #fef4f2;
+            line-height: 1.7;
+          }
+          .logo {
+            font-size: 3.125rem;
+            color: #fef4f2;
+          }
+          .icons {
+            display: flex;
+            margin-top: 2.25rem;
+            &__link {
+              & + * {
+                margin-left: 1rem;
+              }
+            }
+            .icon {
+              width: 1.875rem;
+              height: 1.875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

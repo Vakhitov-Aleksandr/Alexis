@@ -1,0 +1,46 @@
+.services {
+  background: #f7f7f7;
+  position: relative;
+  z-index: 1;
+  .row {
+    margin: -0.9375rem;
+  }
+  .col {
+    width: 25%;
+    padding: 0.9375rem;
+    display: flex;
+    &:nth-child(1) .card {
+      border-bottom: solid 0.1875rem #fc5f45;
+    }
+    &:nth-child(2) .card {
+      border-bottom: solid 0.1875rem #38c695;
+    }
+    &:nth-child(3) .card {
+      border-bottom: solid 0.1875rem #b27cf5;
+    }
+    &:nth-child(4) .card {
+      border-bottom: solid 0.1875rem #feb960;
+    }
+    .card {
+      padding: 3.75rem 1.5625rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.05);
+      background: #fff;
+
+      .icon {
+        width: 3.4375rem;
+        height: 2.5rem;
+        margin-bottom: 1.875rem;
+      }
+      .title {
+        color: #313131;
+        font-size: 1.25rem;
+        margin-bottom: 1.875rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

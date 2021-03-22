@@ -1,0 +1,35 @@
+.subscrib {
+  &__title{
+    font-size: 1.875rem;
+    color: #272727;
+    margin-bottom: 2.6875rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .form {
+    width: 30rem;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+      // .form__input
+  
+      &__input {
+        border-radius: 2.5625rem 0 0 2.5625rem;
+        border: solid 0.125rem #EFEFEF;
+        border-right: none;
+        background: #F7F7F7;
+        flex: 1;
+        padding-left: 1.75rem;
+        &::placeholder{
+          font-size: 1rem;
+          color: #616161;
+        }
+      }
+  }
+  .button {
+    border-radius: 0 2.5625rem 2.5625rem 0;
+    cursor: pointer;
+  }
+}
+
+
